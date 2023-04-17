@@ -1,0 +1,22 @@
+{% extends 'inherited.html' %}
+
+
+   <title>{% block title %} Home - {% endblock title %}</title>
+
+
+  {% block content %} 
+
+    <form action="" method="post" class="form predict">
+      <div class="forms forms-control">
+      {% csrf_token %} 
+        {{ form }}
+
+        <button type="submit" class="btn btn-info home-btn">
+          Make Prediction
+        </button>
+      </div>
+      <br>
+      
+    </form>
+
+  {% endblock content %}

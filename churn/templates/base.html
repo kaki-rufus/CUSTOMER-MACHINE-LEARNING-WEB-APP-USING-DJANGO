@@ -1,0 +1,10 @@
+{% extends 'inherited.html' %}
+ 
+<title>{% block title %} Home {% endblock title %}</title>
+
+{% block content %}
+<a href="{% url 'home' %}" class="btn btn-primary base">MAKE PREDICTIONS</a>
+<!-- <a href="">Make predictions</a> -->
+{% endblock content %}
+
+ 
